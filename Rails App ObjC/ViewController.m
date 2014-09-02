@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <CoreData/CoreData.h>
 
 @interface ViewController ()
 
@@ -24,4 +25,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)postNew:(UIButton *)sender {
+}
+
+- (IBAction)getMyPosts:(UIButton *)sender {
+}
+
+- (IBAction)getAllPosts:(UIButton *)sender {
+}
 @end

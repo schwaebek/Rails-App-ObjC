@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *titleField;
 
+@property (weak, nonatomic) IBOutlet UITextField *contentField;
+- (IBAction)postNew:(UIButton *)sender;
+- (IBAction)getMyPosts:(UIButton *)sender;
+- (IBAction)getAllPosts:(UIButton *)sender;
 
 @end
 
