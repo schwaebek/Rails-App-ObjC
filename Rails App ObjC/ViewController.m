@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 #import <CoreData/CoreData.h>
 
 @interface ViewController ()
@@ -16,6 +17,25 @@
 @implementation ViewController
             
 - (void)viewDidLoad {
+    
+    AppDelegate * appD = [[UIApplication sharedApplication]delegate];
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Post" inManagedObjectContext:appD.managedObjectContext];
+    [fetchRequest setEntity:entity];
+    // Specify criteria for filtering which objects to fetch
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"user = 'jo@theironyard.com'"];
+    [fetchRequest setPredicate:predicate];
+    // Specify how the fetched objects should be sorted
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"posted_at"
+    ascending:YES];
+    [fetchRequest setSortDescriptors:[NSArray arrayWithObjects:sortDescriptor, nil]];
+    
+    NSError *error = nil;
+    NSArray *fetchedObjects = [appD.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    if (fetchedObjects == nil) {
+        NSLog(@"fetchedObjects");
+    }
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
