@@ -14,6 +14,8 @@
 		275BF79F19B63F740043B86E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275BF79D19B63F740043B86E /* Main.storyboard */; };
 		275BF7A119B63F740043B86E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275BF7A019B63F740043B86E /* Images.xcassets */; };
 		275BF7AD19B63F740043B86E /* Rails_App_ObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 275BF7AC19B63F740043B86E /* Rails_App_ObjCTests.m */; };
+		275BF7EC19B88E5C0043B86E /* contactsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 275BF7EB19B88E5C0043B86E /* contactsRequest.m */; };
+		275BF7EF19B88F5F0043B86E /* ContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275BF7EE19B88F5F0043B86E /* ContactsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		275BF7A619B63F740043B86E /* Rails App ObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rails App ObjCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		275BF7AB19B63F740043B86E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		275BF7AC19B63F740043B86E /* Rails_App_ObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rails_App_ObjCTests.m; sourceTree = "<group>"; };
+		275BF7EA19B88E5C0043B86E /* contactsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = contactsRequest.h; sourceTree = "<group>"; };
+		275BF7EB19B88E5C0043B86E /* contactsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = contactsRequest.m; sourceTree = "<group>"; };
+		275BF7ED19B88F5F0043B86E /* ContactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewController.h; sourceTree = "<group>"; };
+		275BF7EE19B88F5F0043B86E /* ContactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,10 @@
 			children = (
 				275BF79419B63F740043B86E /* AppDelegate.h */,
 				275BF79519B63F740043B86E /* AppDelegate.m */,
+				275BF7EA19B88E5C0043B86E /* contactsRequest.h */,
+				275BF7EB19B88E5C0043B86E /* contactsRequest.m */,
+				275BF7ED19B88F5F0043B86E /* ContactsTableViewController.h */,
+				275BF7EE19B88F5F0043B86E /* ContactsTableViewController.m */,
 				275BF79A19B63F740043B86E /* ViewController.h */,
 				275BF79B19B63F740043B86E /* ViewController.m */,
 				275BF79D19B63F740043B86E /* Main.storyboard */,
@@ -220,7 +230,9 @@
 			files = (
 				275BF79619B63F740043B86E /* AppDelegate.m in Sources */,
 				275BF79919B63F740043B86E /* Rails_App_ObjC.xcdatamodeld in Sources */,
+				275BF7EF19B88F5F0043B86E /* ContactsTableViewController.m in Sources */,
 				275BF79C19B63F740043B86E /* ViewController.m in Sources */,
+				275BF7EC19B88E5C0043B86E /* contactsRequest.m in Sources */,
 				275BF79319B63F740043B86E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,7 +17,7 @@
 @implementation ViewController
             
 - (void)viewDidLoad {
-    
+   
     AppDelegate * appD = [[UIApplication sharedApplication]delegate];
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
@@ -46,11 +46,37 @@
 }
 
 - (IBAction)postNew:(UIButton *)sender {
+//    let newPostURL = API + "posts?post[title]=\(titleField.text)&post[content]=\(contentField.text)"
+//    //NSURL in objective c
+//    let encodedString = newPostURL.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
+//    var request = NSMutableURLRequest(URL: NSURL(string: encodedString!))
+//    
+//    request.setValue("zxcasdqwe", forHTTPHeaderField: "AUTH_TOKEN")
+//    request.HTTPMethod = "POST"
+//    NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (respone: NSURLResponse!, data:NSData!, error: NSError!) -> Void in
+//        
+//        let info: AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: nil)
+//        println(info)
 }
 
 - (IBAction)getMyPosts:(UIButton *)sender {
+//    let myPostsURL = API + "posts/mine"
+//    var request = NSMutableURLRequest(URL: NSURL(string: myPostsURL))
+//    request.setValue("zxcasdqwe", forHTTPHeaderField: "AUTH_TOKEN")
+//    NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (respone: NSURLResponse!, data:NSData!, error: NSError!) -> Void in
+//        
+//        let posts = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: nil) as NSArray
+//        println(posts)
+
 }
 
 - (IBAction)getAllPosts:(UIButton *)sender {
+//    let allPostsURL = API + "posts"
+//    let request = NSURLRequest(URL:NSURL(string: allPostsURL))
+//    NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (respone: NSURLResponse!, data:NSData!, error: NSError!) -> Void in
+//        
+//        let posts = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: nil) as NSArray
+//        println(posts)
+//
 }
 @end
