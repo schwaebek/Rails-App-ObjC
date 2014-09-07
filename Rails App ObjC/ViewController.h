@@ -17,5 +17,7 @@
 - (IBAction)getMyPosts:(UIButton *)sender;
 - (IBAction)getAllPosts:(UIButton *)sender;
 
+@property (nonatomic) NSDictionary* contactInfo;
+
 @end
 

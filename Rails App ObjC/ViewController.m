@@ -9,14 +9,32 @@
 #import "ViewController.h"
 #import "AppDelegate.h"
 #import <CoreData/CoreData.h>
+#import "ContactsTableViewController.h"
+#import "ContactsTableViewCell.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
-            
-- (void)viewDidLoad {
+{
+     UIWebView* webView;
+}
+
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+- (void)viewDidLoad
+{
+    
+    webView = [[UIWebView alloc] initWithFrame:self.view.frame];
+    [self.view addSubview:webView];
    
     AppDelegate * appD = [[UIApplication sharedApplication]delegate];
     
@@ -78,5 +96,12 @@
 //        let posts = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: nil) as NSArray
 //        println(posts)
 //
+}
+-(void)setContactInfo:(NSDictionary *)contactInfo
+{
+    _contactInfo = contactInfo;
+    NSURL* url = [NSURL URLWithString:contactInfo [@"html_url"]];
+    NSURLRequest * request = [NSURLRequest requestWithURL:url];
+    [webView loadRequest:request];
 }
 @end

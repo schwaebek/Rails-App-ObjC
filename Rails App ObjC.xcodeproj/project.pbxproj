@@ -16,6 +16,7 @@
 		275BF7AD19B63F740043B86E /* Rails_App_ObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 275BF7AC19B63F740043B86E /* Rails_App_ObjCTests.m */; };
 		275BF7EC19B88E5C0043B86E /* contactsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 275BF7EB19B88E5C0043B86E /* contactsRequest.m */; };
 		275BF7EF19B88F5F0043B86E /* ContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275BF7EE19B88F5F0043B86E /* ContactsTableViewController.m */; };
+		27E5FC4919B8B50D00977FD1 /* ContactsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E5FC4819B8B50D00977FD1 /* ContactsTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		275BF7EB19B88E5C0043B86E /* contactsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = contactsRequest.m; sourceTree = "<group>"; };
 		275BF7ED19B88F5F0043B86E /* ContactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewController.h; sourceTree = "<group>"; };
 		275BF7EE19B88F5F0043B86E /* ContactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewController.m; sourceTree = "<group>"; };
+		27E5FC4719B8B50D00977FD1 /* ContactsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewCell.h; sourceTree = "<group>"; };
+		27E5FC4819B8B50D00977FD1 /* ContactsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				275BF7EB19B88E5C0043B86E /* contactsRequest.m */,
 				275BF7ED19B88F5F0043B86E /* ContactsTableViewController.h */,
 				275BF7EE19B88F5F0043B86E /* ContactsTableViewController.m */,
+				27E5FC4719B8B50D00977FD1 /* ContactsTableViewCell.h */,
+				27E5FC4819B8B50D00977FD1 /* ContactsTableViewCell.m */,
 				275BF79A19B63F740043B86E /* ViewController.h */,
 				275BF79B19B63F740043B86E /* ViewController.m */,
 				275BF79D19B63F740043B86E /* Main.storyboard */,
@@ -234,6 +239,7 @@
 				275BF79C19B63F740043B86E /* ViewController.m in Sources */,
 				275BF7EC19B88E5C0043B86E /* contactsRequest.m in Sources */,
 				275BF79319B63F740043B86E /* main.m in Sources */,
+				27E5FC4919B8B50D00977FD1 /* ContactsTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +424,7 @@
 				275BF7B219B63F740043B86E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		275BF7B319B63F740043B86E /* Build configuration list for PBXNativeTarget "Rails App ObjCTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +433,7 @@
 				275BF7B519B63F740043B86E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

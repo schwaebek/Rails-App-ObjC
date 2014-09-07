@@ -10,35 +10,35 @@
 
 @implementation contactsRequest
 
-//+ (NSDictionary *) requestUserInfo: (NSString *)contactInfo
-//{
-//    //take the username and call the github url
-//    NSString * urlString  = [NSString stringWithFormat:@"api",contactInfo];
-//    NSURL * url = [NSURL URLWithString:urlString];
-//    NSURLRequest * request = [NSURLRequest requestWithURL:url];
-//    
-//    ////MUTABLE REQUEST////
-//    NSMutableURLRequest * mutableRequest = [NSMutableURLRequest requestWithURL:url];
-//    [mutableRequest setHTTPMethod:@"POST"];
-//    
-//    //////////
-//    NSURLResponse * response = nil;
-//    NSError * error = nil;
-//    NSData * responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
-//    NSDictionary * userInfo = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:&error];
-//    NSLog(@"user info = %@", userInfo);
-//    return userInfo;
-//}
-//
-//+ (void)saveUsers: (NSArray *)users
-//{
-//    // path to what we are saving
-//    NSString * path = [contactsRequest usersArchivePath];
-//    // then we archive
-//    NSData * userData = [NSKeyedArchiver archivedDataWithRootObject:users];
-//    // then we save file
-//    [userData writeToFile:path options:NSDataWritingAtomic error:nil];
-//}
++ (NSDictionary *) requestUserInfo: (NSString *)contactInfo
+{
+    //take the username and call the github url /// insert api
+    NSString * urlString  = [NSString stringWithFormat:@"api",contactInfo];
+    NSURL * url = [NSURL URLWithString:urlString];
+    NSURLRequest * request = [NSURLRequest requestWithURL:url];
+    
+    ////MUTABLE REQUEST////
+    NSMutableURLRequest * mutableRequest = [NSMutableURLRequest requestWithURL:url];
+    [mutableRequest setHTTPMethod:@"POST"];
+    
+    //////////
+    NSURLResponse * response = nil;
+    NSError * error = nil;
+    NSData * responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    NSDictionary * userInfo = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:&error];
+    NSLog(@"user info = %@", userInfo);
+    return userInfo;
+}
+
++ (void)saveUsers: (NSArray *)users
+{
+    // path to what we are saving
+    NSString * path = [contactsRequest usersArchivePath];
+    // then we archive
+    NSData * userData = [NSKeyedArchiver archivedDataWithRootObject:users];
+    // then we save file
+    [userData writeToFile:path options:NSDataWritingAtomic error:nil];
+}
 + (NSArray *)loadUsers
 {
     // path to what we are loading
